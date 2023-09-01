@@ -9,7 +9,7 @@
     body {
       background-color: #000000;
       color: #ff3737; 
-      display: block;margin-left: 10%;margin-right: 10%; margin-bottom: 5px;
+      display: block;margin-left: 30%;margin-right: 30%; margin-bottom: 5px;
       /*font-family:Yoyuka;*/
     }
     #botan {display: block;position: relative;width: 70px;height: 70px;margin: 0 auto;overflow: hidden;cursor: pointer;}
@@ -27,6 +27,9 @@
 </head>
 
 <body>
+  
+  <script>function Time() {var now = new Date();var year = now.getFullYear();var mon = now.getMonth()+1;var day = now.getDate();var hour = now.getHours();var minutes  = now.getMinutes();var seconds  = now.getSeconds();var text = year + "/" + mon + "/" + day + "  " + hour + ":" + minutes + ":" + seconds;document.getElementById("real-time").innerHTML = text;}setInterval('Time()',1000);</script>
+  <span id="real-time" ></span><br>
   
   <h1 align="center">ririsito</h1>
   <br>
