@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @font-face{font-family:'Yoyuka';src: url(Yoyuka-Regular.ttf);}
+
+    body {
+      background-color: #eccccc;
+      color: #4c2323; 
+      display: block;
+      margin-left: 30%;margin-right: 30%;margin-bottom: 5px;
+      /*font-family:Yoyuka;*/
+    }
+    #botan {display: block;position: relative;width: 70px;height: 70px;margin: 0 auto;overflow: hidden;cursor: pointer;}
+    #botan img {display: block;position: absolute;width: 100%;top: 50%;left: 50%;transform: translate(-50%, -50%);transition: .1s ease-in-out;}
+    #botan:hover img:last-of-type {opacity: 0;}
+    #profile{display: flex;}
+    #member {width: 100px;margin: auto;}
+
+    
+  </style>
+  <title>ホーム</title>
+</head>
+
+<body>
+  
+  <h1 align="center">ririsito</h1>
+
+  <h2 align="center"><span id="real-time"></span></h2>
+  <script>function Time() {var now = new Date();var year = now.getFullYear();var mon = now.getMonth()+1;var day = now.getDate();var hour = now.getHours();var minutes  = now.getMinutes();var seconds  = now.getSeconds();var text = year + "/" + mon + "/" + day + "  " + hour + ":" + minutes + ":" + seconds;document.getElementById("real-time").innerHTML = text;}setInterval('Time()',1000);</script>
+
+  <img src="kurumaebi.png" alt="車海老ちゃん" title="車海老ちゃん" width="100px" align="center">＜　よっ！<br>
+
+  <br><br><br>
+
+  <h3 align="center">近況報告</h3>
+
+  <div id="botan">
+    <a href="https://yoyuka.github.io/dioscalberg.github.io/h197rYTim45GskIAY.html">
+      <img src="door_open.png">
+      <img src="door_close.png">
+    </a>
+  </div>
+
+  <h3 align="center">メモ</h3>
+
+  <div id="botan">
+    <a href="https://yoyuka.github.io/dioscalberg.github.io/m8oKSAuasfH8374.html">
+      <img src="door_open.png">
+      <img src="door_close.png">
+    </a>
+  </div>
+
+  <h3 align="center">プロフィーーーーーーーーーーーーーーーーーーーーーーーール</h3>
+
+  <div id="botan">
+    <a href="https://yoyuka.github.io/dioscalberg.github.io/pASDJuia89aYihak7.html">
+      <img src="door_open.png">
+      <img src="door_close.png">
+    </a>
+  </div>
+
+
+  <br><br><br>
+
+  <table border="1", align="center">
+    <tr>
+      <td align="center">
+        サイト制作
+      </td>
+
+    </tr>
+    <tr>
+      <td align="center">
+        <br>
+        <div id="profile">
+          <div id="member">
+            <img src="icon_yoyuka.jpg" title="yoyuka" width="70px"> <br>
+            yoyuka
+          </div>
+          <div id="member">
+            <img src="icon_kanasimaki.jpg" title="kanasimaki" width="70px"> <br>
+            kanasimaki
+          </div>
+        </div>
+        <br>
+      </td>
+    </tr>    
+  </table>
+</body>
+
+</html>

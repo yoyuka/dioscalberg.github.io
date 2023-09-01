@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    @font-face{font-family:'Yoyuka';src: url(Yoyuka-Regular.ttf);}
+
+    body {
+      background-color: #000000;
+      color: #ff3737; 
+      display: block;margin-left: 10%;margin-right: 10%; margin-bottom: 5px;
+      /*font-family:Yoyuka;*/
+    }
+    #botan {display: block;position: relative;width: 70px;height: 70px;margin: 0 auto;overflow: hidden;cursor: pointer;}
+    #botan img {display: block;position: absolute;width: 100%;top: 50%;left: 50%;transform: translate(-50%, -50%);transition: .1s ease-in-out;}
+    #botan:hover img:last-of-type {opacity: 0;}
+    #profile{display: flex;}
+    #member {width: 100px;margin: auto;}
+
+    #kinkyo {
+      width: 700px;
+      margin: auto;
+    }
+  </style>
+  <title>文章</title>
+</head>
+
+<body>
+  
+  <h1 align="center">ririsito</h1>
+  <br>
+  <h3 align="center">近況報告</h3>
+
+  <div id="botan"><a href="https://yoyuka.github.io/dioscalberg.github.io/home.html"><img src="door_open.png"><img src="door_close.png"></a></div>
+  
+  <br><br><br>
+
+  <div id="kinkyo">
+    <ul>
+      <li>2023/9/1<br>
+        全てのページのレイアウトを変更しました。ハッピー！
+      </li>
+      <li>2023/8/21<br>
+        新しいページを4つ追加しました。ハッピー！
+      </li>
+    </ul>
+  </div>
+
+  <br><br><br>
+  <table border="1", align="center"><tr><td align="center">サイト制作</td></tr><tr><td align="center"><br><div id="profile"><div id="member"><img src="icon_yoyuka.jpg" title="yoyuka" width="70px"><br>yoyuka</div><div id="member"><img src="icon_kanasimaki.jpg" title="kanasimaki" width="70px"> <br>kanasimaki</div></div><br></td></tr></table>
+
+</body>
+
+</html>
