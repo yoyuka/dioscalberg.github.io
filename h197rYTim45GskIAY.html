@@ -4,55 +4,128 @@
 <head>
   <meta charset="UTF-8">
   <style>
-    @font-face{font-family:'Yoyuka';src: url(Yoyuka-Regular.ttf);}
-
-    body {
-      background-color: #000000;
-      color: #ff3737; 
-      display: block;margin-left: 30%;margin-right: 30%; margin-bottom: 5px;
-      /*font-family:Yoyuka;*/
-    }
+    @font-face{font-family:'smartfont';src: url(03スマートフォントUI.otf);}
     #botan {display: block;position: relative;width: 70px;height: 70px;margin: 0 auto;overflow: hidden;cursor: pointer;}
     #botan img {display: block;position: absolute;width: 100%;top: 50%;left: 50%;transform: translate(-50%, -50%);transition: .1s ease-in-out;}
     #botan:hover img:last-of-type {opacity: 0;}
-    #profile{display: flex;}
-    #member {width: 100px;margin: auto;}
 
-    #kinkyo {
-      width: 700px;
-      margin: auto;
-    }
   </style>
-  <title>文章</title>
+
+  <title>近況報告 ririsito</title>
 </head>
 
-<body>
+<body style="background-color:#ffffff; width:720px; margin:auto; font-family:smartfont;">
   
-  <script>function Time() {var now = new Date();var year = now.getFullYear();var mon = now.getMonth()+1;var day = now.getDate();var hour = now.getHours();var minutes  = now.getMinutes();var seconds  = now.getSeconds();var text = year + "/" + mon + "/" + day + "  " + hour + ":" + minutes + ":" + seconds;document.getElementById("real-time").innerHTML = text;}setInterval('Time()',1000);</script>
-  <span id="real-time" ></span><br>
-  
-  <h1 align="center">ririsito</h1>
-  <br>
-  <h3 align="center">近況報告</h3>
+  <!--時計-->
+  <span id="real-time" style="float:right;"></span>
+  <script>
+    function Time() {
+      var now = new Date();
+      var year = now.getFullYear();
+      var mon = ("00" + (now.getMonth()+1) ).substr( ("00" + (now.getMonth()+1) ).length -2 , 2 );
+      var day = ("00" + now.getDate() ).substr( ("00" + now.getDate() ).length -2 , 2 );
+      var hour = ("00" + now.getHours() ).substr( ("00" + now.getHours() ).length -2 , 2 );
+      var minutes  = ("00" + now.getMinutes() ).substr( ("00" + now.getMinutes() ).length -2 , 2 );
+      var seconds  = ("00" + now.getSeconds() ).substr( ("00" + now.getSeconds() ).length -2 , 2 );
+      var text = year + "/" + mon + "/" + day + "  " + hour + ":" + minutes + ":" + seconds;
+      document.getElementById("real-time").innerHTML = text;
+    }
+    setInterval('Time()',1000);
+  </script>
 
-  <div id="botan"><a href="https://yoyuka.github.io/dioscalberg.github.io/home.html"><img src="door_open.png"><img src="door_close.png"></a></div>
-  
+  <!--上部タイトル-->
+  <p style="background-color:#dedede">ririsito > home > 近況報告</p>
+
+
+  <table border="20">
+
+    <!--タイトル-->
+    <tr>
+      <td colspan="3">
+        <h1 style="text-align:center;">近況報告</h1>
+      </td>
+    </tr>
+    
+    <!--戻るボタン-->
+    <tr>
+      <td>
+        <div id="botan">
+          <a href="https://yoyuka.github.io/dioscalberg.github.io/home.html">
+            <img src="door_open_negate.png">
+            <img src="door_close_negate.png">
+          </a>
+        </div>
+      </td>
+      <td></td>
+      <td>
+        <div id="botan">
+          <a href="https://yoyuka.github.io/dioscalberg.github.io/home.html">
+            <img src="door_open_negate.png">
+            <img src="door_close_negate.png">
+          </a>
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td>
+        <table border="0" >
+
+          <tr style="background-color:#dedede;color:#000000;">
+            <td>2023/9/3</td>
+            <td>日記</td>
+            <td>COMITIA145に一般として参加しました。とても楽しかったです。</td>
+          </tr>
+
+          <tr style="background-color:#000000;color:#ffffff;">
+            <td>2023/9/1</td>
+            <td>サイト更新</td>
+            <td>全てのページのレイアウトを変更しました。</td>
+          </tr>
+      
+          <tr style="background-color:#000000;color:#ffffff;">
+            <td>2023/8/21</td>
+            <td>サイト更新</td>
+            <td>新しいページを4つ追加しました。</td>
+          </tr>
+      
+          
+        </table>
+      </td>
+      <td></td>
+      
+    </tr>
+
+  </table>
+
+
   <br><br><br>
 
-  <div id="kinkyo">
-    <ul>
-      <li>2023/9/1<br>
-        全てのページのレイアウトを変更しました。ハッピー！
-      </li>
-      <li>2023/8/21<br>
-        新しいページを4つ追加しました。ハッピー！
-      </li>
-    </ul>
-  </div>
-
-  <br><br><br>
-  <table border="1", align="center"><tr><td align="center">サイト制作</td></tr><tr><td align="center"><br><div id="profile"><div id="member"><img src="icon_yoyuka.jpg" title="yoyuka" width="70px"><br>yoyuka</div><div id="member"><img src="icon_kanasimaki.jpg" title="kanasimaki" width="70px"> <br>kanasimaki</div></div><br></td></tr></table>
-
+  <table border="1", align="center">
+    <tr>
+      <td align="center">
+        サイト制作
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <br>
+        <div id="profile" style="display: flex;">
+          <div id="member" style="width: 100px;margin:15px;">
+            <img src="icon_yoyuka.jpg" title="yoyuka" width="70px"> <br>
+            よゆか
+          </div>
+          <div id="member" style="width: 100px;margin:15px;">
+            <img src="icon_kanasimaki.jpg" title="kanasimaki" width="70px"> <br>
+            kanasimaki
+          </div>
+        </div>
+        <br>
+      </td>
+    </tr>    
+  </table>
+  <p align="center">©2023 ririsito. All rights reserved.</p>
 </body>
 
 </html>

@@ -8,23 +8,22 @@
     body {
       /*背景色*/ background-color: #000000;
       /*文字色*/ color: #ffffff; 
-      /*display: block;
-      margin-left: 10%; 
-      margin-bottom: 5px;*/
+      width: 800px;
+      margin:auto;
     }
     /*aタグ全適用*/
     a{
       color: #ffffff;
     }
-    /*id*/
     #AIUEO{
       color:orange;
     }
-    /*class*/
     .uaioe{
+      color:#ffffff;
+    }
+    .uaioe h2{
       color:blue;
     }
-    /*class部分適用*/
     .uaioe p{
       color:red;
       text-align: center;
@@ -42,6 +41,14 @@
       background-color:blue;
       height:200px;
     }
+    #B12{
+      background-color:greenyellow;
+      height:50%;
+    }
+    #B13{
+      background-color:green;
+      width:50%;
+    }
     #B2{
       background-color:red;
       padding:50px;
@@ -54,31 +61,35 @@
       background-color:green;
       float:right;
     }
+    #botan {display: block;position: relative;width: 70px;height: 70px;margin: 0 auto;overflow: hidden;cursor: pointer;}
+    #botan img {display: block;position: absolute;width: 100%;top: 50%;left: 50%;transform: translate(-50%, -50%);transition: .1s ease-in-out;}
+    #botan:hover img:last-of-type {opacity: 0;}
+    
   </style>
   <title>test</title>
 </head>
 
 <body  background="moyo2.png">
   
-  <h1>あ</h1>
-  <a href="https://yoyuka.github.io/dioscalberg.github.io/home.html"><img src="entrance.png" width="70px"></a>
-  <a href="https://yoyuka.github.io/dioscalberg.github.io/home.html"><img src="entrance.png" width="70px"></a>
-  <a href="https://yoyuka.github.io/dioscalberg.github.io/home.html"><img src="entrance.png" width="70px"></a>
-  <a href="https://yoyuka.github.io/dioscalberg.github.io/home.html"><img src="entrance.png" width="70px"></a>
-  <a href="https://yoyuka.github.io/dioscalberg.github.io/home.html"><img src="entrance.png" width="70px"></a><br>
-  <a href="https://google.com">Google</a>
+  <h1>テストページ</h1>
+  <div id="botan"><a href="https://yoyuka.github.io/dioscalberg.github.io/home.html"><img src="door_open.png"><img src="door_close.png"></a></div>
   <br>
 
-  <!-idが使えるのは一度だけ->
+  幅800px指定
+  id
   <div id="AIUEO">
     <h2>あいうえお</h2>
   </div>
 
+  class
   <div class="uaioe">
     <h2>うあいおえ</h2>
+    class内で分岐
     <p>おw</p>
   </div>
 
+  入れ子id
+  サイズ指定なし
   <div id="A1">
     ブロックA1
     <div id="A2">
@@ -89,18 +100,32 @@
     </div>
   </div>
 
+  高さ200px指定
   <div id="B1">
     ブロックB1
   </div>
 
+  高さ50%指定
+  <div id="B12">
+    ブロックB12
+  </div>
+
+  幅50%指定
+  <div id="B12">
+    ブロックB12
+  </div>
+
+  padding50px指定（ボックス内側の余白）
   <div id="B2">
     ブロックB2
   </div>
 
+  margin50px指定（ボックス外側の余白）
   <div id="B3">
     ブロックB3
   </div>
 
+  floatをright（右寄せ）
   <div id="B4">
     ブロックB4
   </div>
